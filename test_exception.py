@@ -1,10 +1,9 @@
 try:
 	f = open("car.py")
 	for line in f:
-		print line,
+		print(line, end="")
 except IOError as message:
-	print message
+	print(message)
 finally:
 	f.close()
-	print
-	print "file safely closed"
+	print("file safely closed")
